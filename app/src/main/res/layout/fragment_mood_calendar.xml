@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_vintage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_card_vintage"
+        android:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/mood"
+            app:titleTextAppearance="@style/TextAppearance.ZenSteps.TitleLarge"
+            app:titleTextColor="@color/text_primary_vintage">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/listViewButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                android:text="List"
+                android:textColor="@color/text_primary_vintage"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_list"
+                app:iconTint="@color/text_primary_vintage"
+                app:iconSize="16dp"
+                app:cornerRadius="20dp" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Calendar View -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/surface_card_vintage"
+            app:strokeColor="@color/retro_purple_light"
+            app:strokeWidth="1dp">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@color/surface_card_vintage"
+                android:theme="@style/CalendarViewTheme" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Selected Date Mood Entries -->
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="June 15, 2023"
+            android:textAppearance="@style/TextAppearance.ZenSteps.TitleMedium"
+            android:textColor="@color/text_primary_vintage"
+            android:textStyle="bold"
+            android:letterSpacing="0.01" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarMoodRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addMoodFab"
+        style="@style/Widget.ZenSteps.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="24dp"
+
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/retro_purple"
+        app:icon="@drawable/ic_mood"
+        app:iconTint="@color/white"
+        app:iconSize="20dp"
+        app:cornerRadius="28dp"
+        app:elevation="8dp"
+        app:strokeWidth="0dp" />
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/emptyStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/surface_card_vintage"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/retro_purple_light"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="20dp"
+                    android:alpha="0.6"
+                    android:src="@drawable/ic_mood"
+                    app:tint="@color/retro_purple" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="No mood entries for this date"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.ZenSteps.HeadlineSmall"
+                    android:textColor="@color/text_primary_vintage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Log your mood for this date"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.ZenSteps.BodyMedium"
+                    android:textColor="@color/text_secondary_vintage" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logMoodButton"
+                    style="@style/Widget.ZenSteps.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:text="Log Your Mood"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/retro_purple" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

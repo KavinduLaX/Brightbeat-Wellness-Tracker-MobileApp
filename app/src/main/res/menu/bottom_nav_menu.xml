@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/dashboard" />
+
+    <item
+        android:id="@+id/habitsFragment"
+        android:icon="@drawable/ic_habits"
+        android:title="@string/habits" />
+
+    <item
+        android:id="@+id/moodFragment"
+        android:icon="@drawable/ic_mood"
+        android:title="@string/mood" />
+
+    <item
+        android:id="@+id/hydrationFragment"
+        android:icon="@drawable/ic_hydration"
+        android:title="@string/hydration" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>

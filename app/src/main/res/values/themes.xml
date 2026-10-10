@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Application Theme -->
+    <style name="Base.Theme.ZenSteps" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary Blue Theme -->
+        <item name="colorPrimary">@color/retro_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/retro_sky</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">@color/retro_blue_dark</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorSurface">@color/surface_vintage</item>
+        <item name="colorOnSurface">@color/text_primary_vintage</item>
+        <item name="colorOutline">@color/border_medium_vintage</item>
+        <item name="colorError">@color/gradient_start_vintage</item>
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.ZenSteps.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.ZenSteps.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.ZenSteps.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.ZenSteps.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.ZenSteps.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.ZenSteps.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.ZenSteps.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.ZenSteps.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.ZenSteps.BodySmall</item>
+
+        <!-- Shapes -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.ZenSteps.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.ZenSteps.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.ZenSteps.LargeComponent</item>
+
+    </style>
+
+    <style name="Theme.ZenSteps" parent="Base.Theme.ZenSteps" />
+
+    <!-- Optional Variants -->
+    <style name="Theme.ZenSteps.BlueLight" parent="Base.Theme.ZenSteps">
+        <item name="colorPrimary">@color/retro_blue_light</item>
+        <item name="colorSecondary">@color/retro_sky</item>
+    </style>
+
+    <style name="Theme.ZenSteps.BlueDark" parent="Base.Theme.ZenSteps">
+        <item name="colorPrimary">@color/retro_blue_dark</item>
+        <item name="colorSecondary">@color/retro_navy</item>
+    </style>
+        <!-- Your main app theme should be here -->
+        <style name="Theme.BrightBeat" parent="Theme.Material3.DayNight.NoActionBar">
+            <!-- ... -->
+        </style>
+
+        <!-- Add the missing CalendarView theme -->
+        <style name="CalendarViewTheme" parent="Theme.AppCompat.Light">
+            <item name="colorAccent">@color/retro_purple</item> <!-- Or any accent color -->
+            <item name="android:dateTextAppearance">@style/CalendarDateText</item>
+            <item name="android:weekDayTextAppearance">@style/CalendarWeekDayText</item>
+        </style>
+
+        <style name="CalendarDateText" parent="TextAppearance.AppCompat.Medium">
+            <item name="android:textColor">@color/text_primary_vintage</item>
+        </style>
+
+        <style name="CalendarWeekDayText" parent="TextAppearance.AppCompat.Medium">
+            <item name="android:textColor">@color/text_secondary_vintage</item>
+        </style>
+    <!-- ... (your other styles) ... -->
+
+    <!-- Add the missing FloatingActionButton style -->
+    <style name="Widget.ZenSteps.FloatingActionButton"
+        parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.ZenSteps.SmallComponent</item>
+    </style>
+
+    <!-- Add the missing theme definitions below -->
+
+    <style name="Theme.ZenSteps.RetroOrange" parent="Theme.ZenSteps">
+        <item name="colorPrimary">@color/gradient_start_vintage</item>
+        <!-- You can add other color overrides here -->
+    </style>
+
+    <style name="Theme.ZenSteps.RetroTeal" parent="Theme.ZenSteps">
+        <item name="colorPrimary">@color/retro_teal</item>
+        <!-- You can add other color overrides here -->
+    </style>
+
+    <style name="Theme.ZenSteps.RetroPurple" parent="Theme.ZenSteps">
+        <item name="colorPrimary">@color/retro_purple</item>
+        <!-- You can add other color overrides here -->
+    </style>
+
+
+
+        </resources>

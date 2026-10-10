@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.brightbeat.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_moodFragment"
+            app:destination="@id/moodFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_habitsFragment"
+            app:destination="@id/habitsFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/habitsFragment"
+        android:name="com.example.brightbeat.ui.habits.HabitsFragment"
+        android:label="@string/habits"
+        tools:layout="@layout/fragment_habits">
+        <action
+            android:id="@+id/action_habitsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/moodFragment"
+        android:name="com.example.brightbeat.ui.mood.MoodFragment"
+        android:label="@string/mood"
+        tools:layout="@layout/fragment_mood">
+        <action
+            android:id="@+id/action_moodFragment_to_moodCalendarFragment"
+            app:destination="@id/moodCalendarFragment" />
+        <action
+            android:id="@+id/action_moodFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/moodCalendarFragment"
+        android:name="com.example.brightbeat.ui.mood.MoodCalendarFragment"
+        android:label="@string/mood"
+        tools:layout="@layout/fragment_mood_calendar">
+        <action
+            android:id="@+id/action_moodCalendarFragment_to_moodFragment"
+            app:destination="@id/moodFragment" />
+        <action
+            android:id="@+id/action_moodCalendarFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/hydrationFragment"
+        android:name="com.example.brightbeat.ui.hydration.HydrationFragment"
+        android:label="@string/hydration"
+        tools:layout="@layout/fragment_hydration">
+        <action
+            android:id="@+id/action_hydrationFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.brightbeat.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reminder_intervals">
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+    </string-array>
+    
+    <string-array name="motivational_quotes">
+        <item>The journey of a thousand miles begins with a single step.</item>
+        <item>Wellness is the complete integration of body, mind, and spirit.</item>
+        <item>Take care of your body. It\'s the only place you have to live.</item>
+        <item>Your body is your most priceless possession.</item>
+        <item>The greatest wealth is health.</item>
+        <item>To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.</item>
+        <item>The greatest gift you can give yourself is a healthy lifestyle.</item>
+        <item>Health is not about the weight you lose, but the life you gain.</item>
+        <item>A healthy outside starts from the inside.</item>
+        <item>Take care of your body. It\'s the only place you have to live.</item>
+    </string-array>
+</resources>

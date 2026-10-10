@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#FAFAFA</color>
+    <color name="vintage_black">#1A1A1A</color>
+
+    <!-- Blue Color Palette -->
+    <color name="retro_blue_light">#90CAF9</color>
+    <color name="retro_blue">#2196F3</color>
+    <color name="retro_blue_dark">#1565C0</color>
+    <color name="retro_sky">#64B5F6</color>
+    <color name="retro_navy">#0D47A1</color>
+    <color name="retro_ice">#E3F2FD</color>
+
+    <!-- Surface Colors -->
+    <color name="surface_vintage">#F5F7FA</color>
+    <color name="surface_card_vintage">#FFFFFF</color>
+    <color name="surface_elevated_vintage">#FFFFFF</color>
+
+    <!-- Neutral Colors -->
+    <color name="neutral_100">#EAF0F9</color>
+    <color name="neutral_300">#C5CAE9</color>
+    <color name="neutral_500">#90A4AE</color>
+    <color name="neutral_700">#455A64</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_vintage">#212121</color>
+    <color name="text_secondary_vintage">#616161</color>
+    <color name="text_tertiary_vintage">#9E9E9E</color>
+    <color name="text_on_primary_vintage">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="success_vintage">#4C61AF</color>
+    <color name="warning_vintage">#0734FF</color>
+    <color name="error_vintage">#3649F4</color>
+    <color name="info_vintage">#2196F3</color>
+
+    <!-- Border and Divider Colors -->
+    <color name="border_light_vintage">#E3F2FD</color>
+    <color name="border_medium_vintage">#BBDEFB</color>
+    <color name="border_dark_vintage">#64B5F6</color>
+    <color name="divider_vintage">#E3F2FD</color>
+
+    <!-- Ripple and Shadow -->
+    <color name="ripple_light_vintage">#1F000000</color>
+    <color name="ripple_dark_vintage">#33FFFFFF</color>
+    <color name="shadow_vintage">#1A000000</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start_vintage">#2196F3</color>
+    <color name="gradient_middle_vintage">#64B5F6</color>
+    <color name="gradient_end_vintage">#BBDEFB</color>
+
+    <color name="retro_orange">#8307FF</color>
+    <color name="retro_teal">#001796</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="border_medium">#888888</color>
+    <color name="retro_purple">#8A2BE2</color>
+    <color name="primary_coral">#505CFF</color>
+    <color name="retro_purple_light">#D1C4E9</color>
+    <color name="retro_orange_light">#9C80FF</color>
+    <color name="retro_teal_light">#A0D2DB</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="primary_blue">#3F51B5</color>
+    <color name="primary_red">#3F51B5</color>
+    <color name="primary_yellow">#0080FF</color>
+    <color name="primary_orange">#001EFF</color>
+    <color name="primary_cream">#D0D7FF</color>
+    <color name="primary_butter">#132EFD</color>
+    <color name="primary_peach">#B4FFF5</color>
+    <color name="retro_yellow">#3B5FFF</color>
+    <color name="retro_pink">#3F51B5</color>
+    <color name="medium_gray">#AAAAAA</color>
+    <color name="neutral_200">#DAE2F0</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="primary_coral_light">#80DFE9</color>
+    <color name="surface_light">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_hint_vintage">#BDBDBD</color>
+
+
+    <color name="text_secondary">@color/text_secondary_vintage</color>
+    <color name="text_tertiary">@color/text_tertiary_vintage</color>
+    <color name="text_on_primary">@color/text_on_primary_vintage</color>
+
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="success_green">#4CADAF</color>
+    <color name="error_red">#3F51B5</color>
+
+</resources>
