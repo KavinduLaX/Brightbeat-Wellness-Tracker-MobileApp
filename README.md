@@ -1,5 +1,13 @@
 # BrightBeat — Personal Wellness Tracker 📱💙
 
+<p align="center">
+  <img
+    src="docs/images/BrightBeat-cover.png"
+    alt="GoviSaviya Agricultural Services Rental Platform"
+    width="100%"
+  />
+</p>
+
 BrightBeat is an Android application built with Kotlin to help users develop healthier daily routines through habit tracking, mood journaling, and hydration monitoring. It brings everyday wellness activities into one place with progress tracking, reminders, and visual summaries.
 
 As a Data Science undergraduate, I see BrightBeat as more than a mobile application: it is also a foundation for exploring how personal wellness data can be collected, organized, visualized, and potentially used to support data-driven self-improvement.
