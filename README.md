@@ -2,8 +2,8 @@
 
 <p align="center">
   <img
-    src="docs/images/BrightBeat-cover.png"
-    alt="GoviSaviya Agricultural Services Rental Platform"
+    src="docs/images/BrightBeat.png"
+    alt="BrightBeat — Personal Wellness Tracker"
     width="100%"
   />
 </p>
